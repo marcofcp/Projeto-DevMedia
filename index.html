@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="descrition" content="Projeto DevMedia para praticar a construção e execução de layout de sites!">
+    <meta name="author" content="Marco Pereira">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto DevMedia!</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/cd1e7d262f.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+    <!-- Header com logotipo e ícon de pesquisa -->
+    <header>
+        <div class="container-fluid">
+            <div class="row">
+
+                <div class="logotipo p-3 fs-4">
+                    <a href=""><i class="logo fas fa-map-marker-alt"></i></a>
+                    <a href="#" class="logo text-decoration-none fw-bold">Logo</a>
+                    <a href=""><i class="search fas fa-search float-end"></i></a>
+                </div>
+
+            </div>
+        </div>
+    </header>
+
+    <!-- Secção 1 que contém imagem de fundo e formulário de vôo -->
+
+    <div class="section1">
+        <div class="container-fluid">
+            <div class="row fundo-voo d-flex justify-content-center">
+
+                <div class="formulario-voo">
+                    <!-- Cabeçalho com Flight, Hotel, Rental -->
+                    <div class="cabecalho-voo text-white">
+                        <div class="row text-center">
+                            <div class="p-2 col-4 flight">
+                                <i class="fas fa-plane-departure"></i>
+                                Flight
+                            </div>
+                            <div class="p-2 col-4 hotel">
+                                <i class="fas fa-bed"></i>
+                                Hotel
+                            </div>
+                            <div class="p-2 col-4 rental">
+                                <i class="fas fa-car"></i>
+                                Rental
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Conteúdo do corpo do formulário -->
+                    <h2 class="pt-4 pb-3">Travel the world with us</h2>
+                    <div class="row">
+                        <div class="col-6 locais">
+                            <p class="pontos mb-2">From</p>
+                            <input type="text" id="from" name="from" placeholder="Departing from" class="form-control">
+                            <button class="btn search-dates text-white mt-3 mb-5">Search and find dates</button>
+                        </div>
+                        <div class="col-6">
+                            <p class="pontos mb-2">To</p>
+                            <input type="text" id="to" name="to" placeholder="Arriving at" class="form-control">
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- Secção de viagens com 50% desconto "Good Offers Right Now" -->
+
+    <div class="container">
+        <div class="row galeria d-flex">
+
+            <h2 class="pt-4">Good Offers Right Now</h2>
+            <p>Up to <strong>50%</strong> discount</p>
+            <div class="col-lg-6">
+                <div class="cinqueterre">
+                    <img src="images/cinqueterre.jpg" alt="">
+                    <span class="cinqueterre-legenda">Cinque Terre</span>
+                </div>
+            </div>
+            <div class="col-lg-6 d-flex">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="newyork">
+                            <img src="images/newyork.jpg" alt="">
+                            <span class="cinqueterre-legenda">New York</span>
+                        </div>
+                        <div class="pisa ">
+                            <img src="images/pisa.jpg" alt="">
+                            <span class="cinqueterre-legenda">Pisa</span>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="sanfran">
+                            <img src="images/sanfran.jpg" alt="">
+                            <span class="cinqueterre-legenda">San Francisco</span>
+                        </div>
+                        <div class="paris ">
+                            <img src="images/paris.jpg" alt="">
+                            <span class="cinqueterre-legenda">Paris</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Secção de viagens "Explore Nature" -->
+
+    <div class="container">
+        <div class="row destinos d-flex">
+
+            <h2 class="pt-4">Explore Nature</h2>
+            <p>Travel with us and see nature at its finest.</p>
+
+            <div class="col-lg-6">
+                <div class="norway"><img src="images/ocean.jpg" alt=""></div>
+                <div class="descricao-norway">
+                    <h3 class="titulo pt-3">West Coast, Norway</h3>
+                    <p class="preco pt-2">Roundtrip from $79</p>
+                    <p class="descricao">Praesent tincidunt sed telius ut rutrum sed vitae justo</p>
+                    <p class="tickets">Buy Tickets</p>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="austria"><img src="images/mountains.jpg" alt=""></div>
+                <div class="descricao-austria">
+                    <h3 class="titulo pt-3">Mountains, Austria</h3>
+                    <p class="preco pt-2">One-way from $79</p>
+                    <p class="descricao">Praesent tincidunt sed telius ut rutrum sed vitae justo</p>
+                    <p class="tickets">Buy Tickets</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Secção de subscrição de e-mail -->
+
+    <div class="container offers text-white">
+        <div class="row">
+
+            <h2 class="pt-4 pb-3">Get the best offers first!</h2>
+            <p class="newsletter">Join our newsletter</p>
+            <form action="" name="form-offers">
+                <label>E-mail</label><br>
+                <input type="email" id="email" name="email" placeholder="Your Email address" class="p-2 mb-3"><br>
+                <input type="submit" id="submit" name="submit" value="Subscribe" class="mb-3">
+            </form>
+
+        </div>
+    </div>
+
+    <!-- Secção de Contatos com morada e inclusão de Fontawesome -->
+    <div class="container">
+        <div class="row">
+
+            <h2 class="pt-4 pb-3">Contact</h2>
+            <p>Let us book your next trip!</p>
+            <div class="morada">
+                <i class="fas fa-map-marker-alt lh-lg"></i>Chicago <br>
+                <i class="fas fa-phone-alt lh-lg"></i>Phone +00 151515 <br>
+                <i class="fas fa-envelope lh-lg"></i>Email: mail@gmail.com
+            </div>
+            <form action="" name="form-contatos" class="form-contatos">
+                <input type="text" id="name" name="name" placeholder="Name" class="mt-3 mb-3 pt-2 pb-2"><br>
+                <input type="email" id="email-contatos" name="email-contatos" placeholder="Email" class="mb-3 pt-2 pb-2"><br>
+                <textarea name="message" id="message" cols="30" rows="1" placeholder="Message" class="mb-3 pt-2 pb-2"></textarea>
+                <button class="mb-5">SEND MESSAGE</button>
+            </form>
+
+        </div>
+    </div>
+
+    <!-- Rodapé com links de redes sociais -->
+    <div class="container-fluid">
+        <div class="row">
+
+            <h4 class="find-us text-center mb-4">Find Us On</h4>
+            <div class="redes-sociais text-center fs-4 mb-4">
+                <a href="#"><i class="fab fa-facebook-square"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-snapchat"></i></a>
+                <a href="#"><i class="fab fa-pinterest-p"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+            <p class="powered text-center mb-5">Powered by <u>w3css</u></p>
+        </div>
+    </div>
+
+
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+</body>
+</html>

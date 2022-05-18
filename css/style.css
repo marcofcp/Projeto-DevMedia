@@ -1,0 +1,138 @@
+:root {
+    --cor1: #F44236;
+    --cor2: #D2C7C1;
+    --cor3: #616161;
+    --cor4: #000000;
+    --cor5: #F1F1F1;
+}
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: var(--cor5);
+}
+
+/* Header com logotipo e ícon de pesquisa */
+header {
+    background-color: white;
+}
+.logo {
+    color: var(--cor1);
+}
+.logo:hover {
+    color: #f4837b;
+}
+.search {
+    color: var(--cor3);
+    transition: 0.5s;
+}
+.search:hover {
+    color: var(--cor4);
+    transform: scale(1.5);
+}
+
+/*  Secção 1 que contém imagem de fundo e formulário de vôo */
+.fundo-voo {
+    background: url('../images/london.jpg') no-repeat center top;
+    background-size: auto;
+}
+.formulario-voo {
+    width: 1000px;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    background-color: white;
+}
+.cabecalho-voo i {
+    margin-right: 10px;
+}
+.flight {
+    background-color: var(--cor1);
+}
+
+.hotel, .rental {
+    background-color: var(--cor4);
+}
+.pontos {
+    color: var(--cor3);
+}
+.search-dates {
+    background-color: var(--cor3);
+    padding: 10px;
+}
+
+/* Secção de viagens com 50% desconto "Good Offers Right Now" */
+.galeria img {
+    width: 100%;
+}
+.galeria span {
+    position: relative;
+    bottom: 30px;
+    left: 10px;
+    color: rgba(255, 255, 255, 0.881);
+}
+
+/* Secção de viagens "Explore Nature" */
+.descricao-norway, .descricao-austria {
+    background-color: white;
+}
+.destinos img {
+    width: 100%;
+}
+.preco {
+    color: var(--cor2);
+    font-size: 16px;
+}
+.titulo, .preco, .descricao {
+    padding-left: 10px;
+}
+.tickets {
+    padding-left: 30px;
+}
+
+/* Secção de subscrição de e-mail */
+.offers {
+    background-color: var(--cor3);
+}
+.newsletter {
+    font-size: 14px;
+}
+#email {
+    width: 100%;
+}
+#submit {
+    background-color: var(--cor1);
+    color: white;
+    border: none;
+    padding: 10px 15px;
+}
+
+/* Secção de Contatos com morada e inclusão de Fontawesome */
+.morada i {
+    padding-right: 30px;
+}
+.form-contatos input, textarea {
+    width: 100%;
+}
+.form-contatos button {
+    background-color: var(--cor4);
+    color: white;
+    padding: 10px 15px;
+}
+
+/* Rodapé com links de redes sociais */
+.find-us {
+    color: var(--cor3);
+}
+.redes-sociais {
+    color: var(--cor3);
+}
+.redes-sociais i {
+    color: var(--cor3);
+    padding: 0 5px;
+    transition: 0.5s;
+}
+.redes-sociais i:hover {
+    transform: scale(1.5);
+    color: var(--cor4);
+}
+.powered {
+    color: var(--cor3);
+}
